@@ -1,2 +1,2 @@
 # CIT14-2H-Litaoen
-Repository for CIT14 - 2H course
+Repository for CIT14 course
