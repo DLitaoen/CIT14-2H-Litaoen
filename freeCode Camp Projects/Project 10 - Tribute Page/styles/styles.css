@@ -1,42 +1,138 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #660707;
-    color: #fec500;
-    text-align: center;
-    padding: none;
-    margin: 0 0;
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* #tribute-info {
-    margin-bottom: 30px;
-} */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #840808;
+    color: #fec500;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 
 img {
     display: block;
-    margin: 15px auto;
+    padding: 15px 0;
+    margin: 0 auto;
 }
 
 #hermione-portrait {
-    min-width: 20%;
-    max-width: 25%;
     height: auto;
+    width: 200px;
     margin-top: 2em;
+    border-radius: 25%;
+}
+
+h1 {
+    margin-bottom: 2px;
+}
+
+p {
+    margin-top: 0px;
 }
 
 #image {
-    max-width: 100%;
+    width: 500px;
     height: auto;
-    margin: 30px 0;
+    margin: auto;
+    border-radius: 5%;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 figcaption, #footer {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-a {
+a:link {
     color: #fec500;
+    text-decoration: none;
 }
 
-a:hover, a:active, a:visited {
+a:hover {
+    color: #fec500;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+a:active, a:visited {
     color: #cca000;
+}
+
+#impressive-moments, #badass-moments {
+    margin: 45px 0;
+    padding: 0;
+}
+
+.side-scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.side-scroll-container img {
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.side-scroll-container img:first-child {
+    margin-left: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+
+.side-scroll-container::-webkit-scrollbar-track{
+    background: #840808;
+    height: 10px;
+}
+
+.side-scroll-container::-webkit-scrollbar-thumb {
+    background: #510707;
+    border-radius: 4px;
+    height: 10px;
+}
+
+.quote {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.quote-line {
+    font-size: 25px;
+    font-style: italic;
+    width: 60%;
+    margin: auto;
+}
+
+#footer {
+    margin-top: 70px;
+}
+
+@media (max-width: 500px) {
+    #image {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .side-scroll-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0;
+        width: 100%;
+    }
 }
