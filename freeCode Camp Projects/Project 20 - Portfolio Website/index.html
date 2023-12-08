@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>Portfolio Website</title>
 </head>
 <body>
@@ -21,12 +25,61 @@
         <p>an IT student<p>
     </section>
     <section id="projects">
-        <div class="project-tile">
-            <a href="https://github.com/DLitaoen?tab=repositories" target="_blank">My GitHub Repositories</a>
+        <div class="project-content">
+            <h2>freeCodeCamp Projects</h2>
+            <div id="tile-container">
+                <div class="project-tile" >
+                    <a href="https://dlitaoen.github.io/fCC-Survey-Form/" target="_blank">
+                        <img src="./images/survey-form-thumbnail.png">
+                        Survey Form
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://dlitaoen.github.io/fCC-Tribute-Page/" target="_blank">
+                        <img src="./images/tribute-page-thumbnail.png">
+                        Tribute Page
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://dlitaoen.github.io/fCC-Technical-Documentation-Page/" target="_blank">
+                        <img src="./images/technical-documentation-page-thumbnail.png">
+                        Technical Documentation Page
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://dlitaoen.github.io/fCC-Product-Landing-Page/" target="_blank">
+                        <img src="./images/product-landing-page-thumbnail.png">
+                        Product Landing Page
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://dlitaoen.github.io/CSS-Exercises/" target="_blank">
+                        <img src="./images/css-exercises-thumbnail.png">
+                        CSS Exercises
+                </a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact">
-        <a id="profile-link" href="https://github.com/DLitaoen" target="_blank">GitHub</a>
+        <p>Get in touch via the following:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/destinyiee" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+                Facebook
+            </a>
+            <a href="https://instagram.com/destinyiee" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a id="profile-link" href="https://www.github.com/DLitaoen" target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+        </div>
     </section>
 </body>
+<footer>
+    <p> Disclaimer: This is just a test project made for freeCodeCamp.</p>
+</footer>
 </html>
